@@ -28,3 +28,13 @@ Your half perimeter is 14.5
 The area of your triangle is 29.342
 '''
 
+import math 
+
+a = float(input("Enter the length of side a:"))
+b = float(input("Enter the length of side b:"))
+c = float(input("Enter the length of side c:"))
+hp = (a+b+c)/2
+A = (hp*(hp-a)*(hp-b)*(hp-c))**0.5
+hp = round(hp,1)
+A = round(A,3)
+print(f"Your half perimeter is{hp},The area of your triangle is{A}.")
